@@ -83,13 +83,47 @@ border: 1px solid #ccc;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
-    .portfolio-item video-card{
+    .portfolio-item {
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
       padding: 10px;
     }
+  
+.video-card {
+  position: relative;
+  width: 300px;
+  text-align: center;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.insta-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #fd1d1d, #e1306c, #833ab4);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.insta-btn.overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.insta-btn.below {
+  margin-top: 8px;
+}
+
     .portfolio-item img, .portfolio-item video {
       width: 100%;
       border-radius: 10px;
