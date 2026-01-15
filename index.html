@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool Shit By Me</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e0e0e0; /* light gray background */
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #ff69b4; /* pink heading */
+      margin: 0;
+      font-size: 1.8em;
+    }
+    header input[type="text"] {
+      padding: 7px 12px;
+      border-radius: 5px;
+border: 1px solid #ccc;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      min-height: calc(100vh - 80px);
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    .sidebar h2 {
+      color: #ff69b4;
+      font-size: 1.4em;
+      margin-top: 0;
+    }
+    .sidebar p {
+      line-height: 1.5;
+    }
+
+    .main {
+      flex-grow: 1;
+      padding: 30px;
+    }
+    h2.section-title {
+      color: #ff69b4;
+      margin-top: 0;
+    }
+
+    /* Buttons */
+    .buttons button {
+      background-color: #2575fc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .buttons button:hover { opacity: 0.8; }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .portfolio-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+    }
+    .portfolio-item img, .portfolio-item video {
+      width: 100%;
+      border-radius: 10px;
+     }
+    .portfolio-item p {
+      margin: 10px 0 0 0;
+    }
+
+    /* Before/After Grid */
+    .before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .before-after img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+      margin-top: 50px;
+    }
+    footer a { color: #ff69b4; text-decoration: none; font-weight: bold; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cool Shit By Me</h1>
+    <input type="text" placeholder="Search...">
+  </header>
+
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>About Me</h2>
+      <p>Hi! I’m Arshiya,a visual storyteller who loves to capture scenes, edit them, and experiment with visual stories.</p>
+      <div class="buttons">
+        <button onclick="window.location.href='mailto:youremail@example.com'">Email Me at arshiyaagarwal30@gmail.com</button>
+        <button onclick="window.open('https://instagram.com/yourusername','_blank')">Instagram at jugglesfullofbubbles-work</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+      <!-- Apps Section -->
+      <h2 class="section-title">Apps I Use to edit</h2>
+      <p>picsart,Canva,vn</p>
+      <h2 class="section-title">pics are clicked by</h2>
+      <p>redmi note-13,Canon EOS 5D Mark IV DSLR camera(few)</p>
+
+      <!-- Portfolio Section -->
+      <h2 class="section-title">My Work</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <video controls>
+            <source src="video1.mp4" type="video/mp4">
+          </video>
+          <p>College Event Highlight</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="myimage9.html" alt="Edited Photo">
+          <p>Edited Photo Example</p>
+          </div>
+<br>
+          <div class="portfolio-item">
+          <img src="myimage10.html" alt="Edited Photo">
+          <p>Edited Photo Example</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="myimage11.html" alt="Edited Photo">
+          <p>Edited Photo Example</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="myimage12.html" alt="Edited Photo">
+          <p>Edited Photo Example</p>
+        </div> <div class="portfolio-item">
+          <img src="myimage13.html" style="display:block; margin: auto;">
+          <p>Edited Photo Example</p>
+        </div>
+       </div>
+      <div style="text-align:center; margin-top:20px;">
+        <button onclick="alert('More work coming soon!')">See More at instagram</button>
+      </div>
+
+      <!-- Before/After Section -->
+      <h2 class="section-title">Before vs After</h2>
+      <div class="before-after">
+        <img src="myimage3.html" alt="Before Edit">
+        <img src="myimage4.html" alt="After Edit">
+      </div>
+        <h2 class="section-title">Before vs After</h2>
+      <div class="before-after">
+        <img src="myimage5.html" alt="Before Edit">
+        <img src="myimage6.html" alt="After Edit">
+      </div>
+      <h2 class="section-title">Before vs After</h2>
+      <div class="before-after">
+        <img src="myimage7.html" alt="Before Edit">
+        <img src="myimage8.html" alt="After Edit">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Arshiya Agarwal | <a href="#portfolio">Back to Top</a>
+  </footer>
+
+</body>
+</html>
