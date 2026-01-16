@@ -152,6 +152,33 @@ border: 1px solid #ccc;
       margin-top: 50px;
     }
     footer a { color: #ff69b4; text-decoration: none; font-weight: bold; }
+    .work-section {
+  padding: 40px;
+}
+
+.work-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-left: 5px solid #555;
+  padding-left: 10px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.work-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.work-grid img:hover {
+  transform: scale(1.05);
+}
 
   </style>
 </head>
@@ -243,6 +270,23 @@ border: 1px solid #ccc;
         <img src="myimage7.jpeg" alt="Before Edit">
         <img src="myimage8.jpeg" alt="After Edit">
       </div>
+      <section class="work-section">
+  <h2>Work in Progress</h2>
+
+  <div class="work-grid">
+    <img src="progress1.jpg" alt="Work in progress">
+    <img src="progress2.jpg" alt="Work in progress">
+  </div>
+</section>
+
+<section class="work-section">
+  <h2>Completed Work</h2>
+
+  <div class="work-grid">
+    <img src="final1.jpg" alt="Completed work">
+    <img src="final2.jpg" alt="Completed work">
+  </div>
+</section>
 
     </div>
   </div>
